@@ -1,0 +1,68 @@
+<!doctype html>
+{% load static %}
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <!-- JSON-LD for Site Name -->
+     <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ site_name }}",
+          
+          "url": "{{ request.scheme }}://{{ request.get_host }}/",
+      }
+      </script>
+  </head>
+
+  <body>
+    <div  style="background-color:rgb(245, 236, 215);">
+      {% block content %}
+      {% endblock %}
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var toggleLink = document.querySelector('.toggle-link');
+          var collapseElement = document.getElementById('tocCollapse');
+        
+          // 初期状態の設定
+          updateToggleText(collapseElement, toggleLink);
+        
+          // 折りたたみの表示/非表示時にテキストを変更
+          collapseElement.addEventListener('show.bs.collapse', function () {
+            toggleLink.textContent = '非表示';
+          });
+        
+          collapseElement.addEventListener('hide.bs.collapse', function () {
+            toggleLink.textContent = '表示';
+          });
+        
+          function updateToggleText(collapseElement, linkElement) {
+            if (collapseElement.classList.contains('show')) {
+              linkElement.textContent = '非表示';
+            } else {
+              linkElement.textContent = '表示';
+            }
+          }
+        });
+      </script>
+      
+  </body>
+    <footer class="text-bg-dark text-center py-5">
+      {% block footer %}
+      {% endblock %}
+      © 2024 irigino uppi
+    </div>
+  </footer>
+</html>

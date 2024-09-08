@@ -1,0 +1,1160 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block meta_description %}
+    歴史ある街並み、お寺や大仏で有名な鎌倉、また海はもちろんのこと神社など歴史を持つ建物が多いことでも有名な江の島は東京からのアクセスも良く、言わずと知れた関東屈指の観光地です。<br>
+    しかしどちらも観光スポットが盛りだくさんだからこそ「どこから巡ったらいいのか分からない」「どこがオススメか分からない」と言った方も多いはずです。<br>
+    今回はそんな方々を助けるべく、鎌倉、江の島をそれぞれ3時間～半日程で満喫できるおすすめのコースを❶鎌倉編❷江の島編として作りました！一日で鎌倉、江の島どちらも楽しみたいという方は❶鎌倉編❷江の島編どちらも参考にしていただければ一日で回ることが可能なコースとなっています！全部は回れないよ～という方も一部参考にしてもらえればと思います。<br>
+{% endblock %}
+
+{% block title %}
+    鎌倉・江ノ島 観光王道モデルコース＜半日程度で大仏・海・グルメなど大満足のコースを紹介＞
+{% endblock %}
+   
+{% block content %}
+<!--ビッグイメージ-->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 cover-img w-100" style="background-image:url(static/images/kanko1.jpg);">
+			<div class="cover-text text-center text-dark mask">
+                <h1 class="display-3 fw-bold">
+                    鎌倉・江ノ島 観光王道モデルコース<br>
+                    <span class="fs-1 text-bold">
+                        ＜半日程度で大仏・海・グルメなど大満足のコースを紹介＞
+                    </span>
+                </h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--全体背景-->
+
+<!--鎌倉概要-->
+<div class="container container-fluid">
+    <div class="row text-start mt-4">
+        <div class="col-xs-12">
+            <p class="fs-4">
+                歴史ある街並み、お寺や大仏で有名な鎌倉、また海はもちろんのこと神社など歴史を持つ建物が多いことでも有名な江の島は東京からのアクセスも良く、言わずと知れた関東屈指の観光地です。<br>
+                しかしどちらも観光スポットが盛りだくさんだからこそ「どこから巡ったらいいのか分からない」 「どこがオススメか分からない」と言った方も多いはずです。
+                今回はそんな方々を助けるべく、鎌倉、江の島をそれぞれ半日程で満喫できるおすすめのコースを❶鎌倉編❷江の島編として作りました！一日で鎌倉、江の島どちらも楽しみたいという方は❶鎌倉編❷江の島編どちらも参考にしていただければ一日で回ることが可能なコースとなっています！全部は回れないよ～という方も一部参考にしてもらえればと思います。<br>
+            </p>
+        </div>
+    </div>
+    <div class="row py-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body text-bg-dark">
+                    <p class="card-text">鎌倉観光モデルコースマップ</p>
+                </div>
+                <img src="{% static 'images/kankomap1.jpg' %}" class="card-img-top" alt="..." style="height: 400px;">
+            </div>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+            <div class="card">
+                <div class="card-body text-bg-dark">
+                    <p class="card-text">江ノ島観光モデルコースマップ</p>
+                </div>
+                <img src="{% static 'images/kankomap2.jpg' %}" class="card-img-top" alt="..." style="height: 400px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--目次コンテナ-->
+<div class="container mt-5">
+    <!--目次内容-->
+    <div class="row mx-2">
+        <!-- 目次メニュー -->
+        <nav id="toc" class="col-xs-10 col-md-6 border border-5 border-black p-4 ">
+            <div class="sticky-top">
+                <h5>
+                    <i class="bi bi-list-ul"></i>
+                        目次 [
+                    <a href="#tocCollapse" class="toggle-link link-secondary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="tocCollapse">
+                        非表示
+                    </a>
+                    ]</h5>
+                    <div class="collapse show" id="tocCollapse">
+                        <ul class="nav flex-column fs-4">
+                            <li class="nav-item">
+                                <a class="nav-link active h5" href="#section1">❶ 鎌倉編</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section1-1">1-1. 「おにぎりこんが」
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section1-2">1-2. 「鶴岡八幡宮」</a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section1-3">1-3. 「報国寺」</a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section1-4">1-4. 「小町通り」</a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section1-5">1-5. 「鎌倉大仏（高徳院）」</a>
+                                
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section1-6">1-6. 「長谷寺」</a>
+                                
+                            </li>
+                            <li class="nav-item border-bottom border-2 border-black">
+                                <a class="nav-link" href="#section1-7">鎌倉編まとめ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h5" href="#section2">❷ 江の島編</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section2-1">2-1. 「あさひ 本店」</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section2-2">2-2. 「江の島エスカー」</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section2-3">2-3. 「江の島シーキャンドル」</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section2-4">2-4. 「江の島岩屋」</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section2-5">2-5. 「江島神社」</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section2-6">2-6. 「とびっちょ 本店」</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#section2-7">番外編. 「新江の島水族館」</a>
+                            </li>
+                            <li class="nav-item border-bottom border-2 border-black">
+                                <a class="nav-link" href="#section2-8">江の島編まとめ</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- 記事の内容 -->
+<div class="container mt-5">
+    <!--1に関する記事の説明-->
+    <div class="row my-5">
+        <div class="col-md-12 mb-5">
+            <div class="mb-3">
+                <!--写真差し替え、文字を下に並べる-->
+                <h2 id="section1" style="text-decoration: underline double;">❶ 鎌倉編　　</h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <img src="{% static 'images/kamakurakanko1.jpg' %}" class="img-fluid w-100" alt="...">
+                        <p><a href="https://travel.rakuten.co.jp/mytrip/howto/kamakura-daibutsu">出典</a></p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            鎌倉は大仏やお寺などがあり観光名所として有名です。更には観光を盛り上げてくれるグルメもたくさんあります！<br>
+                            食べ歩きしながら歴史ある観光名所を巡りれば最高の散策になること間違いなし！<br>
+                            それでは早速鎌倉観光モデルコースです。どうぞ！<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--1-1.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section1-1">1-1. 「おにぎり こんが」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            まずは散策前の腹ごしらえから！<br>
+                            鎌倉駅から徒歩５分、小町通りの隣の若宮大路に建つおにぎり屋、
+                            <span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">おにぎり こんが</span> 。<br>
+                            名店 大塚ぼんご直伝のおにぎりで、日本一のおにぎりと言ったら「ぼんご」。ぼんごが唯一暖簾分けを許したお店がここ<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">おにぎり こんが</span> 。<br>
+                            腹が減っては散策はできぬということでまずは腹ごしらえをおにぎりこんがで済ませましょう！<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/kamakurakanko2.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/kamakurakanko3.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row fs-6">
+                    <p><a href="https://fbih.jp/">出典</a></p>
+                </div>
+                <div class="row">
+                    <p class="fs-4">
+                        腹ごしらえではなく、観光後のお腹の空いたタイミングでも最適なフードとなっています。ぜひ一度ご賞味あれ！<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>店舗名：おにぎりこんが　鎌倉店</p>
+                            <p>住所：神奈川県鎌倉市小町2-12-27鶴ヶ丘会館1F</p>
+                            <p>営業時間：7:00 – 19:00　
+                                ※定休日：第二火曜日、第四火曜日</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://tabelog.com/tokyo/A1315/A131504/13283678/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                食べログはこちら
+                            </a>
+                        </div>
+                        <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                            <a href="#" role="button" class="btn btn-danger" style="width: 10rem;">
+                                Instagramはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.4124749149864!2d139.549236675234!3d35.32057744970238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845bb2916d811%3A0xd2503293d0d989d6!2z44K444Op44OD44OV44KhIOmOjOWAieWwj-eUuumAmuOCiuW6lw!5e0!3m2!1sja!2sjp!4v1724104782456!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <!--1-2.-->
+            <div class="border-bottom border-4 border-black mt-5 pt-5">
+                <h2 id="section1-2">1-2. 「鶴岡八幡宮」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12 fs-4">
+                        <p>
+                            おにぎりこんがで腹ごしらえを済ませたら、そのまま若宮大路をまっすぐ歩いて5分、鎌倉を代表する有名な神社、<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">鶴岡八幡宮</span> 。<br>
+                            約800年の歴史を誇る神社で、源の頼朝とゆかりが深く、勝負事や出世にご利益があるパワースポットです。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div  class="col-md-12">
+                        <img src="{% static 'images/kamakurakanko4.jpg' %}" class="img-fluid w-100" alt="...">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="fs-4">
+                        観光名所最初のスポット鶴岡八幡宮で、まずはパワーをもらってみてはいかがでしょうか。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：鶴岡八幡宮</p>
+                            <p>住所：神奈川県鎌倉市雪の下2-1-31</p>
+                            <p>開門・閉門時間：6：00～20：00　　※定休日：無休</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://www.hachimangu.or.jp/" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                        <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                            <a href="https://www.instagram.com/tsurugaoka_official/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                Instagramはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.194729399466!2d139.5563462!3d35.325985599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845b87890aa89%3A0xa867ad10105036b5!2z6ba05bKh5YWr5bmh5a6u!5e0!3m2!1sja!2sjp!4v1724971868638!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!--1-3.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section1-3">1-3. 「報国寺」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            次は鶴岡八幡宮から歩いて15分程、竹の庭で有名な<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">報国寺</span> 。<br>
+                            報国寺では雑音の無い静かで幻想的な竹林を見る事ができます。非日常を味わえ、癒されること間違いなしです！<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{% static 'images/kamakurakanko5.jpg' %}" class="img-fluid" alt="...">
+                        <p><a href="https://kamaiko.net/houkokuji.html">出典1</a></p>
+                    </div>
+                    <div class="col-md-4 mt-4 mt-md-0">
+                        <img src="{% static 'images/kamakurakanko6.jpg' %}" class="img-fluid" alt="...">
+                        <p><a href="https://kamakuratrip.com/kyukoan/">出典2</a></p>
+                    </div>
+                    <div class="col-md-4 mt-md-0">
+                        <img src="{% static 'images/kamakurakanko7.jpg' %}" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                
+                <div class="row mt-2">
+                    <p class="fs-4">
+                        報国寺の中にはお抹茶を楽しめる「休耕庵」という食事処があります。ここではお抹茶を嗜みながら絶景の竹林を楽しむことができます。<br>
+                        ぜひ一度は体験して欲しい世界観です。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：功臣山　報國寺</p>
+                            <p>住所：鎌倉市浄明寺2-7-4</p>
+                            <p>営業時間：9：00～16：00　　※定休日：12/29～1/3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://houkokuji.or.jp/" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                        <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                            <a href="https://www.instagram.com/houkokuji_official/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                Instagramはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.436040803201!2d139.5692379!3d35.3199921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018442d28cbf7a7%3A0x72746d1149c32ef7!2z5aCx5Zu95a-6!5e0!3m2!1sja!2sjp!4v1724971927847!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+            <!--1-4.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section1-4">1-4. 「小町通り」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            報国寺まで観光したら散策も中盤戦。一度鎌倉駅に戻りましょう。<br>
+                            鎌倉駅に戻る道にぜひ立ち寄っていただきたい場所<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">小町通り</span>。<br>
+                            小町通りは鎌倉観光に訪れた人々で賑わい、食べ歩きグルメやデザートはもちろんのこと、おしゃれなカフェや雑貨店が盛りだくさん！！<br>
+                            オススメを言い出したらキリがないので今回は割愛します、ごめんなさい（泣）<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="{% static 'images/kamakurakanko8.jpg' %}" class="img-fluid w-100" alt="...">
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="fs-4">
+                        散策の中盤戦、一度小町通りで一休憩するのはいかがでしょうか。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：小町通り</p>
+                            <p>住所：鎌倉市小町1～2丁目、雪の下1～2丁目付近</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://www.trip-kamakura.com/place/175.html" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6510.924635560538!2d139.55124889999996!3d35.31933940000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845ea44c9ab2f%3A0x1bde11dc6067612b!2z5bCP55S66YCa44KK!5e0!3m2!1sja!2sjp!4v1724971967220!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+            <!--1-5.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section1-5">1-5. 「鎌倉大仏（高徳院）」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            小町通りで一休憩を終えたら、鎌倉駅から江ノ電で3駅の長谷駅で下車、長谷駅から徒歩10分程にある高徳院に向かってください。<br>
+                            いよいよ鎌倉随一のシンボル、皆さんご存じ国宝<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">鎌倉大仏</span>です！<br>
+                            高徳院に入ってすぐ見える大仏、国宝にも指定されている大仏は高さが約13.35メートル、総重量約121トンと圧巻の大きさを誇ります。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="{% static 'images/kamakurakanko9.jpg' %}" class="img-fluid w-100" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><a href="https://buzz-trip.com/kamakura/kamakuradaibutsu/">出典</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="fs-4">
+                        この鎌倉大仏は大仏内部に入れる胎内拝観が可能です！ぜひ大仏の内部を探検してみてはいかがでしょうか。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：高徳院</p>
+                            <p>住所：鎌倉市長谷4-2-28</p>
+                            <p>営業時間：（4月～9月）8：00～17：30　（10月～3月）8：00～15：00　※ご入場は閉門15分前まで</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://www.kotoku-in.jp/" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                        <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                            <a href="https://www.instagram.com/explore/locations/645192018/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                Instagramはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.561467594037!2d139.53574219999996!3d35.31687649999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845d483566573%3A0x668297698a59623!2z5Zu95a6dIOmOjOWAieWkp-S9mw!5e0!3m2!1sja!2sjp!4v1724972006701!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+                <!--1-6.-->
+                <div class="border-bottom border-4 border-black">
+                <h2 id="section1-6">1-6. 「長谷寺」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            いよいよ鎌倉観光の最後、季節毎の花が楽しめる花の寺でおなじみ<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">長谷寺</span>。<br>
+                            先ほどの高徳院から歩いて7,8分程の長谷寺。長谷寺の魅力はなんと言っても四季折々の花を楽しめる事です。<br>
+                            春は桜、梅雨はアジサイ、夏は蓮、秋は紅葉、冬は椿と１年を通じて四季折々の花を愛でることが可能です！<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/kamakurakanko10.jpg' %}" class="img-fluid " alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/kamakurakanko11.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><a href="https://www.hasedera.jp/about/">出典</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="fs-4">
+                        散策の最後にゆったりと美しい花を見ながら今回の鎌倉観光の振り返りをしてみてはいかがでしょうか。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：長谷寺</p>
+                            <p>住所：鎌倉市長谷3-11-2</p>
+                            <p>営業時間：8：00～16：30（閉山17：00）　※定休日：無休</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://www.hasedera.jp/" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.739067957683!2d139.53306340000003!3d35.312464500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601845f4077127d5%3A0x57eb6150baf7add1!2z6ZW36LC35a-6!5e0!3m2!1sja!2sjp!4v1724972566777!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+            <!--鎌倉編まとめ-->
+            <div class="row mt-5 pt-5">
+                <div class="col-md-12 mb-2">
+                    <div class="text-decoration-underline">
+                        <h2 id="section1-7" style="text-decoration: underline double;">鎌倉編まとめ　　</h2>
+                    </div>
+                    <div class="container container-fluid mt-5 mb-4">
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <div class="img-container aspect-ratio-box">
+                                    <img src="{% static 'images/kamakuramatome1.jpg' %}" class="img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <div class="img-container aspect-ratio-box">
+                                    <img src="{% static 'images/kamakuramatome2.jpg' %}" class="img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">    
+                            <div class="col-md-12">
+                                <p class="fs-4">
+                                    今回紹介したお店＆観光名所はいかがでしたでしょうか？一度は行ってみたいと思っていただけたでしょうか。
+                                    今回紹介した観光名所以外にも鎌倉にはたくさん名所があります。
+                                    また今回はグルメについてあまりご紹介しませんでしたが、鎌倉はグルメも豊富です。
+                                    グルメ重視の方は以下のページでグルメ紹介をしていますので、そちらも参考にしていただければと思います。
+                                </p>
+                            </div>
+                            <!--鎌倉グルメ記事をカードで挿入-->
+                            <div class="col-md-12 my-4">
+                                <div class="card mw-100" style="width: 36rem;">
+                                    <img src="{% static 'images/gurumesite.jpg' %}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">【最新版】鎌倉小町通りグルメスポット厳選3選</h5>
+                                        <p class="card-text">
+                                            鎌倉と言えば歴史ある街並み、お寺、大仏など関東圏内でも屈指の観光地です。 そんな鎌倉に来たらぜひ立ち寄りたい場所　「小町通り」。 小町通りでは鎌倉観光を盛り上げてくれるグルメがいっぱい！
+                                            今回は、鎌倉に来たら必ず食べて欲しいグルメスポットを ❶食べ歩き編　❷イートイン編　❸デザート編で 厳選して3選ずつ用意しました。<br>
+                                            小町通りに訪れた際はぜひ参考にしてください！！<br>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-end m-3">
+                                        <a href="#" class="btn btn-outline-primary">詳しくはこちらから→</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="fs-4">
+                                    皆様の鎌倉観光を盛り上げてくれる参考になれば幸いです。それでは鎌倉観光へいってらっしゃい！！<br>
+                                </p>
+                                <p class="fs-4">
+                                    ちなみに、、、もし鎌倉観光が終わっても元気な方は続く❷江の島編もご覧になられて、合わせて散策してみてはどうでしょうか。<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--2に関する記事の説明-->
+    <div class="row my-5">
+        <div class="col-md-12 mb-5">
+            <div class="mb-3">
+                <!--写真差し替え、文字を下に並べる-->
+                <h2 id="section2" style="text-decoration: underline double;">❷ 江の島編　　</h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <img src="{% static 'images/enoshimakanko1.jpg' %}" class="img-fluid w-100" alt="...">
+                        <p><a href="https://www.kanagawa-kankou.or.jp/spot/65">出典</a></p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            江の島には海はもちろんのこと歴史ある神社など散策にはもってこいの観光地です。絶景の海を背景に神社を巡る散策は最高です！<br>
+                            また散策だけでなく、海鮮も名物で普段はなかなか食べることのできない生しらすなども有名です。<br>
+                            江の島観光だけでなく、先ほど紹介した鎌倉観光と合わせて一日散策も可能ですので元気のある方はぜひチャレンジしてみてください。<br>
+                            それでは江の島観光モデルーコースです。どうぞ！<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--2-1.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section2-1">2-1. 「あさひ 本店」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            まずは散策前の腹ごしらえから。<br>
+                            たこを2～3匹まるまるプレス焼きをした江の島名物丸焼きたこせんべいを提供してくれる<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">あさひ 本店</span>。<br>
+                            たこをプレス焼きしているところを見ることができ、プレスの際に出る音は衝撃的です！<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko2.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                        <p><a href="https://umisakura.com/enoshima-food/vol28">出典1</a></p>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko3.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                        <p><a href="https://www.tabiulala.com/kamasho/spot078/">出典2</a></p>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="fs-4">
+                        せんべいは圧巻の大きさ。たこ以外にえびなどもあり、多種の味わいを楽しむことができます。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>店舗名：あさひ 本店</p>
+                            <p>住所：神奈川県藤沢市江の島1-4-10</p>
+                            <p>営業時間：9：00～18：00　　※定休日：木曜日</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://tabelog.com/kanagawa/A1404/A140403/14022338/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                食べログはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.2413586884704!2d139.48011225000002!3d35.29998385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ee43ed1b7d1%3A0xbc583a6373dc1c3e!2z44GC44GV44Gy5pys5bqX!5e0!3m2!1sja!2sjp!4v1724972107796!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <!--2-2.-->
+            <div class="border-bottom border-4 border-black mt-5 pt-5">
+                <h2 id="section2-2">2-2. 「江の島エスカー」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12 fs-4">
+                        <p>
+                            あさひ 本店で腹ごしらえを済ませたら頂上まで楽々に登ることができるエスカレーター<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">江の島エスカー</span>をお使いください。<br>
+                            江の島の頂上まで徒歩で行くには急な坂、階段を15分程上らなければいけません、これがなかなかしんどい、、、<br>
+                            そんな時、4つのエスカーを乗り継いで頂上まで行けちゃうのがこの江の島エスカー。観光名所は帰りの下り坂で巡りましょう！<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko4.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div  class="col-md-6 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko5.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><a href="https://www.fujisawa-kanko.jp/spot/enoshima/04.html">出典</a></p>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="fs-4">
+                        下りもエスカーを使いたいという方は往復券もありますので、そちらをご購入いただければと思います。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：江の島エスカー</p>
+                            <p>住所：神奈川県藤沢市江の島2-3-9</p>
+                            <p>営業時間：8：50-19：05　　※定休日：無休</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://www.fujisawa-kanko.jp/spot/enoshima/04.html" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.2178285478185!2d139.4804842!3d35.30056860000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184f6af7971d03%3A0x8f598ae0cce1fad1!2z5rGf44Gu5bO244Ko44K544Kr44O8MeWMuuS5l-OCiuWgtA!5e0!3m2!1sja!2sjp!4v1724972140136!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!--2-3.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section2-3">2-3. 「江の島シーキャンドル」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            エスカーで頂上まで登ったら早速見えるのが<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">シーキャンドル</span>。<br>
+                            江の島サムエル・コッキング苑内に建つ高さ59.8メートル、海抜119.6メートルの展望台。屋内外の展望フロアからは富士山や伊豆半島などが一望でき、湘南のシンボルとなっています。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="{% static 'images/enoshimakanko6.jpg' %}" class="img-fluid w-100" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><a href="https://kamaiko.net/houkokuji.html">出典</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="fs-4">
+                        またシーキャンドルがあるサムエル・コッキング苑内にはおしゃれなカフェや四季折々の草花が見れる庭園もありますので是非立ち寄ってみてください！<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：江の島シーキャンドル / 江の島サムエル・コッキング苑</p>
+                            <p>住所：神奈川県藤沢市江の島2-3-28</p>
+                            <p>9：00～20：00　　※定休日：</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://enoshima-seacandle.com/" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.2511026226116!2d139.478425!3d35.2997417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ee5ce045bbd%3A0x356c5f13bb58dfb3!2z5rGf44Gu5bO244K344O844Kt44Oj44Oz44OJ44Or!5e0!3m2!1sja!2sjp!4v1724972189803!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+            <!--2-4.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section2-4">2-4. 「江の島岩屋」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            エスカーで登った山を越えると、そこには長い歳月を経て波の浸食によりできた海食洞窟<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">江の島岩屋</span>があります。<br>
+                            第一岩屋と第二岩屋があり、江の島の龍神伝説などの歴史に関する展示がされていて、パワースポットとしても有名です。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko7.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko8.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><a href="https://www.tabirai.net/localinfo/article/article-13826/">出典</a></p>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <p class="fs-4">
+                        薄暗い道をローソクを持って進むエリアでは冒険気分を味わう事ができますので一度訪れてみてはいかがでしょうか。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：江の島岩屋</p>
+                            <p>住所：神奈川県藤沢市江の島2</p>
+                            <p>営業時間：9：00～17：00　　季節によって異なります</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://www.trip-kamakura.com/place/175.html" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.304804880646!2d139.47558859999992!3d35.2984071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ee5b73eb461%3A0xc7d8a554fd76780!2z5rGf44Gu5bO25bKp5bGL!5e0!3m2!1sja!2sjp!4v1724972225952!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+            <!--2-5.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section2-5">2-5. 「江島神社」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            岩屋まで来たら江の島散策ももう折り返し、エスカーで登ってきた坂を散策しながら下りましょう。<br>
+                            そんな帰り道で複数あるのが<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">江島神社</span>。
+                            江島神社は辺津宮、中津宮、奥津宮の三社があり、海の守護神である女神が祀られており、金運や恋愛運など多種の運を高めるパワースポットとして有名です。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko9.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                        <p class="fs-4 text-end">辺津宮</p>
+                    </div>
+                    <div class="col-md-4 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko10.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                        <p class="fs-4 text-end">中津宮</p>
+                    </div>
+                    <div class="col-md-4 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko11.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                        <p class="fs-4 text-end">奥津宮</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><a href="http://enoshimajinja.or.jp/okutsumiya/">出典</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="fs-4">
+                        どれか一つでも良いので立ち寄ってみてはいかがでしょうか。<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：江島神社</p>
+                            <p>住所：神奈川県藤沢江の島2-3-8</p>
+                            <p>営業時間：8：30～17：00</p>
+                        </div>
+                    </div>
+                </div><div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="http://enoshimajinja.or.jp/" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.2259650452493!2d139.47740681744386!3d35.30036640000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ee42ebf95c5%3A0xfa7d72e70c9a705f!2z5rGf5bO256We56S-IOi-uua0peWurg!5e0!3m2!1sja!2sjp!4v1724972301732!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+                <!--2-6.-->
+                <div class="border-bottom border-4 border-black">
+                <h2 id="section2-6">2-6. 「とびっちょ 本店」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            江島神社を巡り、坂を下り終えたら散策も終了、ペコペコのお腹に海鮮丼をぶち込みましょう！<br>
+                            海鮮丼と言ったらやっぱり<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">とびっちょ 本店</span>。
+                            連日大行列のできるお店で、どんぶりのサイズは驚きの大きさ！！<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko12.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko13.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><a href="https://epark.jp/shopinfo/fsp3052/">出典</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="fs-4">
+                        人気メニューはとびっちょ丼ですが、どんぶりの種類はたくさんありますので自分の好きなどんぶりも見つかるはずです！<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：とびっちょ 本店</p>
+                            <p>住所：神奈川県藤沢市江の島1-6-7</p>
+                            <p>営業時間：11：00～21：00　　※定休日：無休</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://tabelog.com/kanagawa/A1404/A140403/14000795/" role="button" class="btn btn-warning" style="width: 10rem;">
+                                食べログはこちら
+                            </a>
+                        </div>
+                        <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                            <a href="https://www.instagram.com/tobiccho/?hl=ja" role="button" class="btn btn-danger" style="width: 10rem;">
+                                Instagramはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.187938039991!2d139.4822319!3d35.3013114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ee3f8113e2b%3A0x4380a86ffa300443!2z44Go44Gz44Gj44Gh44KHIOacrOW6lw!5e0!3m2!1sja!2sjp!4v1724972368218!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+            <!--2-7.-->
+            <div class="border-bottom border-4 border-black">
+                <h2 id="section2-7">番外編. 「新江ノ島水族館」
+                </h2>
+            </div>
+            <div class="container container-fluid mt-2 mb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="fs-4">
+                            散策をしてもなお元気のある方必見、<span class="fw-bold" style="background: linear-gradient(transparent 70%, #ffe100e0 50%);">新江ノ島水族館</span>。<br>
+                            魚だけでなく、カワウソやかピパラなどもおり、他の水族館とは一味違った水族館をお楽しみいただけます。<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko14.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <div class="img-container aspect-ratio-box">
+                            <img src="{% static 'images/enoshimakanko15.jpg' %}" class="img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><a href="https://www.timesclub.jp/sp/tanomachi_ex/kanagawa/fujisawa/005.html">出典</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="fs-4">
+                        お子様が喜ぶこと間違なしでファミリーにで楽しむこともできますが、カップルで来る方も多く、デートスポットとしてもＧＯＯＤです♡<br>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4 p-2 fs-4">
+                        <p class="text-decoration-underline">詳細情報</p>
+                        <div class="mx-4">
+                            <p>施設名：新江ノ島水族館</p>
+                            <p>住所：神奈川県藤沢市片瀬海岸2-19-1</p>
+                            <p>営業時間：９：00～17：00　※時期によって異なります　　※定休日：無し　施設点検等で臨時休館あり</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="d-md-flex justify-content-start">
+                        <div>
+                            <a href="https://www.enosui.com/basicinfo.php" role="button" class="btn btn-primary" style="width: 10rem;">
+                                HPはこちら
+                            </a>
+                        </div>
+                        <div class="mt-2 mt-md-0 ms-md-2 ms-sm-0">
+                            <a href="https://www.instagram.com/enosui_com/" role="button" class="btn btn-danger" style="width: 10rem;">
+                                Instagramはこちら
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                <!--map-->
+                <div class="row my-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.8380721815433!2d139.479428!3d35.31000479999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184ef97613a5af%3A0x679611b7d80b7d4f!2z5paw5rGf44OO5bO25rC05peP6aSo!5e0!3m2!1sja!2sjp!4v1724972409526!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>     
+            </div>
+            <!--鎌倉編まとめ-->
+            <div class="row mt-5 pt-5">
+                <div class="col-md-12 mb-2">
+                    <div class="text-decoration-underline">
+                        <h2 id="section2-8" style="text-decoration: underline double;">江の島編まとめ　　</h2>
+                    </div>
+                    <div class="container container-fluid mt-5 mb-4">
+                        <div class="row my-5">
+                            <div class="col-md-6">
+                                <div class="img-container aspect-ratio-box">
+                                    <img src="{% static 'images/enoshimakanko16.jpg' %}" class="img-fluid" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <div class="img-container aspect-ratio-box">
+                                    <img src="{% static 'images/enoshimakanko17.jpg' %}" class="img-fluid" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">    
+                            <div class="col-md-12">
+                                <p class="fs-4">
+                                    今回紹介したお店＆観光名所はいかがでしたでしょうか？一度行ってみたいと思っていただけたでしょうか。<br>
+                                    今回紹介した観光名所以外にも江の島にはたくさん名所があります。<br>
+                                    全ての名所を紹介しきれませんでしたが、皆様の江ノ島観光を盛り上げてくれる参考になれば幸いです。それではいってらっしゃい！！<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+{% endblock %}
+
+{% block footer %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="d-md-flex justify-content-around">
+            <ul class="list-unstyled text-start">
+                <li class="nav-item mb-4">
+                    <a class="nav-link active h5" href="#section1">
+                        <span class="text-decoration-underline">❶ 鎌倉編</span>
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-1">
+                        1-1. 「おにぎりこんが」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-2">
+                        1-2. 「鶴岡八幡宮」    
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-3">
+                        1-3. 「報国寺」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-4">
+                        1-4. 「小町通り」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-5">
+                        1-5. 「鎌倉大仏（高徳院）」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section1-6">
+                        1-6. 「長谷寺」
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-unstyled text-start mt-4 mt-md-0">
+                <li class="nav-item mb-4">
+                    <a class="nav-link h5" href="#section2">
+                        <span class="text-decoration-underline">❷ 江の島編</span>
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-1">
+                        2-1. 「あさひ　本店」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-2">
+                        2-2. 「江の島エスカー」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-3">
+                        2-3. 「江の島シーキャンドル」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-3">
+                        2-4. 「江の島岩屋」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-3">
+                        2-5. 「江島神社」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-3">
+                        2-6. 「とびっちょ　本店」
+                    </a>
+                </li>
+                <li class="nav-item mb-2">
+                    <a class="nav-link" href="#section2-3">
+                        番外編. 「新江ノ島水族館」
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

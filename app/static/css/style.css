@@ -1,0 +1,73 @@
+
+.img-hidden{
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.caption-position{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cover-img {
+	height: 340px;
+	display: table;
+	width: 100%;
+	background-size:contain;
+}
+
+/* ワイドスクリーン用のCSS */
+@media only screen and (min-width: 1500px) {
+	.cover-img {
+		height: 800px;
+	}
+}
+
+/* ノートPC用 */
+@media only screen and (min-width : 1300px) and (max-width : 1499px) {
+	.cover-img {
+		height: 470px;
+	}
+}
+
+/* タブレット用のCSS */
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+	.cover-img {
+		height: 250px;
+	}
+}
+
+/* スマホ用のCSS */
+@media only screen and (max-width: 479px) {
+	.cover-img {
+		height: 300px;
+	}
+}
+
+.cover-text {
+	display: table-cell;
+	vertical-align: middle;
+  text-align: center;
+}
+
+.mask{
+  background-color: rgba(255, 255, 255, 0.6)
+}
+
+.img-container {
+	overflow: hidden;
+}
+  
+.aspect-ratio-box {
+	aspect-ratio: 4 / 3; /* 例えば4:3の比率を設定 */
+}
+  
+.img-container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
